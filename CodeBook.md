@@ -21,14 +21,14 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ## There are 2 intermediate datasets:
 
-1. "Features2.txt"
+"Features2.txt"
 This contains the names of the measurements for mean() and std() measurements only, from the input file features.txt.
 
 	1. V1: integer - measurement id, values ranging from 1 - 543
 	2. V2: varchar(40) - measurement text
 
 
-2. "Features2new.txt"
+"Features2new.txt"
 This contains the names of the measurements for mean() and std() measurements to be used for the variable name.
 
 	1. V1: integer, - measurement id, values ranging from 1 - 543
@@ -37,80 +37,79 @@ This contains the names of the measurements for mean() and std() measurements to
 
 ## There are 2 output datasets:
 
-1. "Tidy_data_set.txt"
+"Tidy_data_set.txt"
 This is a tidy data set containing measurements for the mean and standard deviation only.
 Mean and standard deviation measure are identified as those containing the text strings "-mean()" and "-std()". 
-It contains 68 fields:
+It contains 68 fields, fields 3.-68.  All represent different measurements for the mean and standard deviation:
 
 	1.	Subject: integer - id for the subjects taking part in the experiment, values range from 1-30
 	2.	Activity: varchar(20) - id for the activity being undertaken, with 6 values - WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-	3.-68.  All represent different measurements for the mean and standard deviation:
-		3.	tBodyAcc mean X: number
-		4.	tBodyAcc mean Y: number
-		5.	tBodyAcc mean Z: number
-		6.	tGravityAcc mean X: number
-		7.	tGravityAcc mean Y: number
-		8.	tGravityAcc mean Z: number
-		9.	tBodyAccJerk mean X: number
-		10.	tBodyAccJerk mean Y: number
-		11.	tBodyAccJerk mean Z: number
-		12.	tBodyGyro mean X: number
-		13.	tBodyGyro mean Y: number
-		14.	tBodyGyro mean Z: number
-		15.	tBodyGyroJerk mean X: number
-		16.	tBodyGyroJerk mean Y: number
-		17.	tBodyGyroJerk mean Z: number
-		18.	tBodyAccMag mean: number
-		19.	tGravityAccMag mean: number
-		20.	tBodyAccJerkMag mean: number
-		21.	tBodyGyroMag mean: number
-		22.	tBodyGyroJerkMag mean: number
-		23.	fBodyAcc mean X: number
-		24.	fBodyAcc mean Y: number
-		25.	fBodyAcc mean Z: number
-		26.	fBodyAccJerk mean X: number
-		27.	fBodyAccJerk mean Y: number
-		28.	fBodyAccJerk mean Z: number
-		29.	fBodyGyro mean X: number
-		30.	fBodyGyro mean Y: number
-		31.	fBodyGyro mean Z: number
-		32.	fBodyAccMag mean: number
-		33.	fBodyAccJerkMag mean: number
-		34.	fBodyGyroMag mean: number
-		35.	fBodyGyroJerkMag mean: number
-		36.	tBodyAcc std X: number
-		37.	tBodyAcc std Y: number
-		38.	tBodyAcc std Z: number
-		39.	"tGravityAcc std X: number
-		40.	tGravityAcc std Y: number
-		41.	tGravityAcc std Z: number
-		42.	tBodyAccJerk std X: number
-		43.	tBodyAccJerk std Y: number
-		44.	tBodyAccJerk std Z: number
-		45.	tBodyGyro std X: number
-		46.	tBodyGyro std Y: number
-		47.	tBodyGyro std Z: number
-		48.	tBodyGyroJerk std X: number
-		49.	tBodyGyroJerk std Y: number
-		50.	tBodyGyroJerk std Z: number
-		51.	tBodyAccMag std: number
-		52.	tGravityAccMag std: number
-		53.	tBodyAccJerkMag std: number
-		54.	tBodyGyroMag std: number
-		55.	tBodyGyroJerkMag std: number
-		56.	fBodyAcc std X: number
-		57.	fBodyAcc std Y: number
-		58.	fBodyAcc std Z: number
-		59.	fBodyAccJerk std X: number
-		60.	fBodyAccJerk std Y: number
-		61.	fBodyAccJerk std Z: number
-		62.	fBodyGyro std X: number
-		63.	fBodyGyro std Y: number
-		64.	fBodyGyro std Z: number
-		65.	fBodyAccMag std: number
-		66.	fBodyAccJerkMag std: number
-		67.	fBodyGyroMag std: number
-		68.	fBodyGyroJerkMag std: number
+	3.	tBodyAcc mean X: number
+	4.	tBodyAcc mean Y: number
+	5.	tBodyAcc mean Z: number
+	6.	tGravityAcc mean X: number
+	7.	tGravityAcc mean Y: number
+	8.	tGravityAcc mean Z: number
+	9.	tBodyAccJerk mean X: number
+	10.	tBodyAccJerk mean Y: number
+	11.	tBodyAccJerk mean Z: number
+	12.	tBodyGyro mean X: number
+	13.	tBodyGyro mean Y: number
+	14.	tBodyGyro mean Z: number
+	15.	tBodyGyroJerk mean X: number
+	16.	tBodyGyroJerk mean Y: number
+	17.	tBodyGyroJerk mean Z: number
+	18.	tBodyAccMag mean: number
+	19.	tGravityAccMag mean: number
+	20.	tBodyAccJerkMag mean: number
+	21.	tBodyGyroMag mean: number
+	22.	tBodyGyroJerkMag mean: number
+	23.	fBodyAcc mean X: number
+	24.	fBodyAcc mean Y: number
+	25.	fBodyAcc mean Z: number
+	26.	fBodyAccJerk mean X: number
+	27.	fBodyAccJerk mean Y: number
+	28.	fBodyAccJerk mean Z: number
+	29.	fBodyGyro mean X: number
+	30.	fBodyGyro mean Y: number
+	31.	fBodyGyro mean Z: number
+	32.	fBodyAccMag mean: number
+	33.	fBodyAccJerkMag mean: number
+	34.	fBodyGyroMag mean: number
+	35.	fBodyGyroJerkMag mean: number
+	36.	tBodyAcc std X: number
+	37.	tBodyAcc std Y: number
+	38.	tBodyAcc std Z: number
+	39.	tGravityAcc std X: number
+	40.	tGravityAcc std Y: number
+	41.	tGravityAcc std Z: number
+	42.	tBodyAccJerk std X: number
+	43.	tBodyAccJerk std Y: number
+	44.	tBodyAccJerk std Z: number
+	45.	tBodyGyro std X: number
+	46.	tBodyGyro std Y: number
+	47.	tBodyGyro std Z: number
+	48.	tBodyGyroJerk std X: number
+	49.	tBodyGyroJerk std Y: number
+	50.	tBodyGyroJerk std Z: number
+	51.	tBodyAccMag std: number
+	52.	tGravityAccMag std: number
+	53.	tBodyAccJerkMag std: number
+	54.	tBodyGyroMag std: number
+	55.	tBodyGyroJerkMag std: number
+	56.	fBodyAcc std X: number
+	57.	fBodyAcc std Y: number
+	58.	fBodyAcc std Z: number
+	59.	fBodyAccJerk std X: number
+	60.	fBodyAccJerk std Y: number
+	61.	fBodyAccJerk std Z: number
+	62.	fBodyGyro std X: number
+	63.	fBodyGyro std Y: number
+	64.	fBodyGyro std Z: number
+	65.	fBodyAccMag std: number
+	66.	fBodyAccJerkMag std: number
+	67.	fBodyGyroMag std: number
+	68.	fBodyGyroJerkMag std: number
 
 
 ## Tranformations undergone to create the tidy data set:
@@ -149,10 +148,12 @@ It contains 68 fields:
 *Text file created "Features2.txt"* 
 *Dataframe table updated: "features2", "data2*
 
-10 Label the subject with a descriptive variable name
+
+10. Label the subject with a descriptive variable name
 *Dataframe table updated: "subjects2"*
 
-11 Label the activity labels with a descriptive variable name
+
+11. Label the activity labels with a descriptive variable name
 *Dataframe table updated: "labels2"*
 
 
