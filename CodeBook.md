@@ -122,10 +122,12 @@ It contains 68 fields:
 
 
 3. Read activity labels and features data into data frame tables in R
+
 *Dataframe tables created: "activity labels", "features"*
 
 
 4. Read files in test folder into data frame tables in R
+
 *Dataframe tables created: "test_subjects", "test_labels" and "test_data"*
 
 
