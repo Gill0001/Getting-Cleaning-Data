@@ -122,19 +122,19 @@ It contains 68 fields:
 
 
 3. Read activity labels and features data into data frame tables in R
-Dataframe tables created: "activity labels", "features"
+*Dataframe tables created: "activity labels", "features"*
 
 
 4. Read files in test folder into data frame tables in R
-Dataframe tables created: "test_subjects", "test_labels" and "test_data"
+*Dataframe tables created: "test_subjects", "test_labels" and "test_data"*
 
 
 5. Read files in train folder into data frame tables in R
-Dataframe tables created: "train_subjects", "train_labels" and "train_data"
+*Dataframe tables created: "train_subjects", "train_labels" and "train_data"*
 
 
 6. Merge the training and test sets to create one data set using rbind
-Dataframe tables created: "subjects", "labels" and "data"
+*Dataframe tables created: "subjects", "labels" and "data"*
 
 
 7. Extract only the features for the mean and standard deviation. These are identified as those containing the text "-mean()" and "-std()" 
@@ -142,17 +142,17 @@ Dataframe tables created: "subjects", "labels" and "data"
 7.1 First find the index of features which contain the text "-mean()" and "-std()" using the glob2rx and grep functions
 
 7.2 Use the index to create new dataframes for the features and data dataframes containing just the mean and standard deviation measurements
-Dataframe tables created: "features2", "data2"
+*Dataframe tables created: "features2", "data2"*
 
 
 8. Use descriptive activity names to name the activities in the dataset using the match function
-Dataframe table updated: "labels"
+*Dataframe table updated: "labels"*
 
 
 9. Appropriately label the dataset with descriptive variable names
 
 9.1 Write the features2 dataframe out to a text file 
-Text file created "Features2.txt"
+*Text file created "Features2.txt"*
 
 9.2 Open "Features2.txt" in Notepad and edit the activity names to remove any characters which are not allowed (or may cause confusion) in the variable names.
 Also remove any duplication of texts. 
@@ -160,21 +160,21 @@ Also remove any duplication of texts.
 Save the file as "Features2new.txt" 
 
 9.3 Read the "Features2new.csv" file back into dataframe features2
-Dataframe table updated: "features2"
+*Dataframe table updated: "features2"*
 
 9.4 Set the variable headings in data2 to the feature description 
-Dataframe table updated: "data2"
+*Dataframe table updated: "data2"*
 
 9.5 Set the variable name heading in subjects
-Dataframe table updated: "subjects2"
+*Dataframe table updated: "subjects2"*
 
 9.6 Set the variable name heading in labels
-Dataframe table updated: "labels2"
+*Dataframe table updated: "labels2"*
 
 
 10. Merge the Data with the subjects and labels using cbind and create a new dataframe table and write it out to a text file
-Dataframe table created "tidy_data_set"
-Text file created "tidy_data_set.txt"
+*Dataframe table created "tidy_data_set"*
+*Text file created "tidy_data_set.txt"*
 
 
 11. Create a second, independant tidy data set with the average of each variable for each activity and each subject
