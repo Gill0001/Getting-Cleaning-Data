@@ -1,5 +1,4 @@
-==================================================================
-Getting & Cleaning Data: Course Project: Codebook
+# Getting & Cleaning Data: Course Project: Codebook
 Version 1.0
 ==================================================================
 Gill Griffiths
