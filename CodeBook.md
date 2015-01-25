@@ -1,12 +1,9 @@
-# Getting & Cleaning Data: Course Project: Codebook
+# Getting & Cleaning Data Course Project Codebook
 Version 1.0
-==================================================================
 Gill Griffiths
 ==================================================================
 
-There are 8 input datasets:
-===========================
-
+## There are 8 input datasets:
 
 1. "features.txt" 		: List of all features.
 2. "activity_labels.txt" 	: Links the class labels with their activity name.
@@ -22,8 +19,7 @@ The "README.txt" and "features_info.txt" contained in the zip file below give in
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 
-There are 2 intermediate datasets:
-==================================
+## There are 2 intermediate datasets:
 
 1. "Features2.txt"
 This contains the names of the measurements for mean() and std() measurements only, from the input file features.txt.
@@ -39,8 +35,7 @@ This contains the names of the measurements for mean() and std() measurements to
 	2. V2: varchar(40) - measurement text
 
 
-There are 2 output datasets:
-============================
+## There are 2 output datasets:
 
 1. "Tidy_data_set.txt"
 This is a tidy data set containing measurements for the mean and standard deviation only.
@@ -118,8 +113,7 @@ It contains 68 fields:
 		68.	fBodyGyroJerkMag std: number
 
 
-Tranformations undergone to create the tidy data set:
-=====================================================
+## Tranformations undergone to create the tidy data set:
 
 1. Set default directory for reading data to the one created by unzipping the data for the project
 
