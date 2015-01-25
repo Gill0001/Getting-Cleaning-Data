@@ -145,34 +145,22 @@ It contains 68 fields:
 *Dataframe table updated: "labels"*
 
 
-9. Appropriately label the dataset with descriptive variable names
+9. Label the dataset with descriptive variable names. First write the features2 dataframe out to a text file. Secondly open "Features2.txt" in Notepad and edit the activity names to remove any characters which are not allowed (or may cause confusion) in the variable names and remove any duplication of texts. (Other than that I have left the descriptions pretty much as they are since I don"t really understand what they are supposed to represent.) Then save the file as "Features2new.txt". Thirdly, read the "Features2new.csv" file back into dataframe features2  Fourthly Set the variable headings in data2 to the feature description 
+*Text file created "Features2.txt"* 
+*Dataframe table updated: "features2", "data2*
 
-9.1 Write the features2 dataframe out to a text file 
-*Text file created "Features2.txt"*
-
-9.2 Open "Features2.txt" in Notepad and edit the activity names to remove any characters which are not allowed (or may cause confusion) in the variable names.
-Also remove any duplication of texts. 
-(Other than that I have left the descriptions pretty much as they are since I don"t really understand what they are supposed to represent.)
-Save the file as "Features2new.txt" 
-
-9.3 Read the "Features2new.csv" file back into dataframe features2
-*Dataframe table updated: "features2"*
-
-9.4 Set the variable headings in data2 to the feature description 
-*Dataframe table updated: "data2"*
-
-9.5 Set the variable name heading in subjects
+10 Label the subject with a descriptive variable name
 *Dataframe table updated: "subjects2"*
 
-9.6 Set the variable name heading in labels
+11 Label the activity labels with a descriptive variable name
 *Dataframe table updated: "labels2"*
 
 
-10. Merge the Data with the subjects and labels using cbind and create a new dataframe table and write it out to a text file
+12. Merge the Data with the subjects and labels using cbind and create a new dataframe table and write it out to a text file
 *Dataframe table created "tidy_data_set"*
 *Text file created "tidy_data_set.txt"*
 
 
-11. Create a second, independant tidy data set with the average of each variable for each activity and each subject
+13. Create a second, independant tidy data set with the average of each variable for each activity and each subject
 
 
