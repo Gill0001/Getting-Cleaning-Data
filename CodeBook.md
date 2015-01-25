@@ -122,12 +122,10 @@ It contains 68 fields:
 
 
 3. Read activity labels and features data into data frame tables in R
-
 *Dataframe tables created: "activity labels", "features"*
 
 
 4. Read files in test folder into data frame tables in R
-
 *Dataframe tables created: "test_subjects", "test_labels" and "test_data"*
 
 
@@ -139,11 +137,7 @@ It contains 68 fields:
 *Dataframe tables created: "subjects", "labels" and "data"*
 
 
-7. Extract only the features for the mean and standard deviation. These are identified as those containing the text "-mean()" and "-std()" 
-
-7.1 First find the index of features which contain the text "-mean()" and "-std()" using the glob2rx and grep functions
-
-7.2 Use the index to create new dataframes for the features and data dataframes containing just the mean and standard deviation measurements
+7. Extract only the features for the mean and standard deviation. These are identified as those containing the text "-mean()" and "-std()". First find the index of features which contain the text "-mean()" and "-std()" using the glob2rx and grep functions. Second use the index to create new dataframes for the features and data dataframes containing just the mean and standard deviation measurements
 *Dataframe tables created: "features2", "data2"*
 
 
