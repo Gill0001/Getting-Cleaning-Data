@@ -144,7 +144,7 @@ It contains 68 fields, fields 3.-68.  All represent different measurements for t
 *Dataframe table updated: "labels"*
 
 
-9. Label the dataset with descriptive variable names. First write the features2 dataframe out to a text file. Secondly open "Features2.txt" in Notepad and edit the activity names to remove any characters which are not allowed (or may cause confusion) in the variable names and remove any duplication of texts. (Other than that I have left the descriptions pretty much as they are since I don"t really understand what they are supposed to represent.) Then save the file as "Features2new.txt". Thirdly, read the "Features2new.csv" file back into dataframe features2  Fourthly Set the variable headings in data2 to the feature description 
+9. Label the dataset with descriptive variable names. First write the features2 dataframe out to a text file. Secondly open "Features2.txt" in Notepad and edit the activity names to remove any characters which are not allowed (or may cause confusion) in the variable names and remove any duplication of texts. (Other than that I have left the descriptions pretty much as they are since I don"t really understand what they are supposed to represent.) Then save the file as "Features2new.txt" - this file is available in the repository. Thirdly, read the "Features2new.csv" file back into dataframe features2  Fourthly Set the variable headings in data2 to the feature description 
 *Text file created "Features2.txt"* 
 *Dataframe table updated: "features2", "data2*
 
@@ -163,5 +163,5 @@ It contains 68 fields, fields 3.-68.  All represent different measurements for t
 
 
 13. Create a second, independant tidy data set with the average of each variable for each activity and each subject
-
+*Dataframe table created "grouped_tidy_data_set", "Summarised_tidy_dataset"*
 
